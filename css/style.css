@@ -14,11 +14,32 @@ Typo
 
 body {
     font-family: 'Oxygen', sans-serif;
+    background-color: rgb(20, 3, 3);
 }
 
 /*---------------
 Header
 ----------------*/
+header {
+    height: 15vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.speakerview, .adattaschermo {
+    margin: 1px 1px 0 1px;
+}
+
+header h1 {
+    background-color: rgb(105, 103, 103);
+    color: white;
+    font-size: 5px;
+    border-radius: 2px;
+    padding: 0 2px ;
+}
 
 
 /*---------------
