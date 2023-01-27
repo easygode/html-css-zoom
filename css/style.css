@@ -18,15 +18,40 @@ body {
 }
 
 /*---------------
+Common
+----------------*/
+
+.container {
+    display: flex;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.row {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------
 Header
 ----------------*/
 header {
     height: 15vh;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
+
+nav a {
+    color: inherit;
 }
 
 .speakerview, .adattaschermo {
@@ -35,18 +60,100 @@ nav {
 
 header h1 {
     background-color: rgb(105, 103, 103);
-    color: white;
-    font-size: 5px;
+    color: #ffff;
+    font-size: 30px;
     border-radius: 2px;
     padding: 0 2px ;
 }
 
+.pic {
+    position: relative;
+}
+
+.nome {
+    font-size: 12px;
+    background-color: rgba(180, 180, 180, 0.5);
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 3px
+}
 
 /*---------------
 Main
 ----------------*/
 
+.container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 5px;
+}
 
 /*---------------
 Footer
 ----------------*/
+
+footer{
+    background-color: rgb(85, 79, 79);
+}
+
+nav{
+
+    display: flex;
+    width: 100vh;
+
+}
+
+
+.sinistra{
+    width: 15%;
+}
+
+.centro {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+.destra {
+    width: 10%;
+}
+
+
+
+footer .row > section,
+footer .row section ul
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.sinistra{
+    background-color: grey;
+    align-items: center;
+    padding: 30px;
+} 
+
+
+footer nav section.sinistra a,
+footer nav section.centro a
+{
+    color: white;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+}
+
+
+.freccia{
+    margin-top: 10px;
+}
+
+.green{
+    background-color: #4bc800;
+}
